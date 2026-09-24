@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi formulariooo</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <h1>FORMULARIO</h1>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" minlength="3" required /><br /><br />
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required /><br /><br />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su correo" required /><br /><br />
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña" required /><br /><br />
+
+        <fieldset>
+            <legend>Género:</legend>
+            <input type="radio" id="genero_masculino" name="genero" value="masculino" />
+            <label for="genero_masculino">Masculino</label>
+            <input type="radio" id="genero_femenino" name="genero" value="femenino" />
+            <label for="genero_femenino">Femenino</label>
+        </fieldset><br />
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" /><br /><br />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" /><br /><br />
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" /><br /><br />
+
+        <label for="regimen">Régimen:</label>
+        <select id="regimen" name="regimen">
+            <option value="">-- Selecciona una opción --</option>
+            <option value="simplificado">Régimen simplificado</option>
+            <option value="comun">Régimen común</option>
+            <option value="gran_contribuyente">Gran contribuyente</option>
+            <option value="auto_retenedor">Autorretenedor</option>
+        </select><br /><br />
+
+        <fieldset>
+            <legend>Intereses:</legend>
+            <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia" />
+            <label for="tecnologia">Tecnología</label>
+            <input type="checkbox" id="viajes" name="intereses" value="viajes" />
+            <label for="viajes">Viajes</label>
+            <input type="checkbox" id="deportes" name="intereses" value="deportes" />
+            <label for="deportes">Deportes</label>
+        </fieldset><br />
+
+        <label for="comentarios">Comentarios:</label><br />
+        <textarea id="comentarios" name="comentarios" rows="6" cols="50"></textarea><br /><br />
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</html>
